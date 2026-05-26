@@ -11,3 +11,19 @@ wheels/
 .uv-cache
 .uv-python
 .uv-project
+
+# Experiment outputs
+exp/**/output/
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.y4m
+
+# Logs and debug
+*.log
+debug.png
+nav_menu*.png
+worlds_list.png
+world_detail*.png
+reflex_result*.png
