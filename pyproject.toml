@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "inputtino-python",
+    "inputtino-python; sys_platform == 'linux'",
     "vrcpilot[ocr]>=0.3.0",
 ]
 

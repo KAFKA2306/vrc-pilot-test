@@ -16,3 +16,19 @@ tasks:
       UV_PROJECT_ENVIRONMENT: "{{.ROOT_DIR}}/.uv-project"
     cmds:
       - uv run python exp/002_vrchat_mass_photographer/mass_photographer.py
+
+  reflex-test:
+    env:
+      UV_CACHE_DIR: "{{.ROOT_DIR}}/.uv-cache"
+      UV_PYTHON_INSTALL_DIR: "{{.ROOT_DIR}}/.uv-python"
+      UV_PROJECT_ENVIRONMENT: "{{.ROOT_DIR}}/.uv-project"
+    cmds:
+      - uv run python exp/003_vrchat_reflex_demonstration/reflex_agent.py
+
+  world-pioneer:
+    env:
+      UV_CACHE_DIR: "{{.ROOT_DIR}}/.uv-cache"
+      UV_PYTHON_INSTALL_DIR: "{{.ROOT_DIR}}/.uv-python"
+      UV_PROJECT_ENVIRONMENT: "{{.ROOT_DIR}}/.uv-project"
+    cmds:
+      - uv run python exp/004_vrchat_world_pioneer/pioneer_agent.py

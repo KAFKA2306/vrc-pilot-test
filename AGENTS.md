@@ -11,8 +11,17 @@
 
 - `task explorer` runs the VRChat explorer experiment.
 - `task mass-photographer` runs the multi-world photo experiment.
+- `task reflex-test` runs the 0ms reaction speed demonstration.
+- `task world-pioneer` runs the automated world exploration and crate opening experiment.
 - `uv run python <path>` is the underlying execution pattern used by Taskfile targets.
 - If you add new runnable experiments, add a matching Taskfile target instead of invoking the script directly.
+
+## AI & User Account Separation
+
+- Use separate VRChat profiles to allow concurrent sessions for AI and humans.
+- AI should use a dedicated profile (e.g., `--profile 10`) in Desktop mode (`--no-vr`).
+- Human users can use the default profile in VR mode.
+- See `docs/MANUAL_MULTI_ACCOUNT.md` for detailed instructions on multi-account setup.
 
 ## Coding Style & Naming Conventions
 
