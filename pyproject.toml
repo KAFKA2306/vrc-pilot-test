@@ -1,0 +1,13 @@
+[project]
+name = "vrc-pilot-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "inputtino-python",
+    "vrcpilot[ocr]>=0.3.0",
+]
+
+[tool.uv.sources]
+inputtino-python = { git = "https://github.com/games-on-whales/inputtino.git", subdirectory = "bindings/python", rev = "stable" }
